@@ -1,0 +1,33 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <h2 class="active">Inicia sesión</h2>
+    <h2 class="inactive underlineHover" (click)="navigateToRegister()">Regístrate</h2>
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="../../../../assets/images/usuariopng.png" id="icon" alt="User Icon" />
+    </div>
+
+    <!-- Login Form -->
+    <form>
+      <input type="text" id="Correo" class="fadeIn second" name="login" placeholder="Correo" [(ngModel)]="correo">
+      <input type="password" id="password" class="fadeIn third" name="contrasena" placeholder="Contraseña" [(ngModel)]="contrasena" required style="padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 5px;
+      width: 85%;
+      border: 2px solid #f6f6f6;
+      border-radius: 5px;
+      transition: all 0.5s ease-in-out;">
+          <input type="button" class="fadeIn fourth" value="Iniciar sesión" (click)="inicioSesion()">
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">¿Olvidaste tu contraseña?</a>
+    </div>
+  </div>
+</div>

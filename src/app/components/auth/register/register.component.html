@@ -1,0 +1,51 @@
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <h2 class="inactive underlineHover" (click)="navigateToLogin()">Inicia sesión</h2>
+    <h2 class="active">Regístrate</h2>
+
+    <!-- Icon -->
+    <div class="fadeIn first">
+      <img src="../../../../assets/images/usuariopng.png" id="icon" alt="User Icon" />
+    </div>
+
+    <!-- Registration Form -->
+    <form (ngSubmit)="registrar()">
+      <div class="form-group">
+        <input type="text" id="correo" class="fadeIn second" name="correo" placeholder="Correo" [(ngModel)]="correo" required>
+      </div>
+      <div class="form-group">
+        <input type="password" id="password" class="fadeIn third" name="contrasena" placeholder="Contraseña" [(ngModel)]="contrasena" required style="padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 5px;
+        width: 85%;
+        border: 2px solid #f6f6f6;
+        border-radius: 5px;
+        transition: all 0.5s ease-in-out;">
+              </div>
+      <div class="form-group">
+        <input type="text" id="nombre" class="fadeIn fourth" name="nombre" placeholder="Nombre" [(ngModel)]="nombre" required>
+      </div>
+      <button type="submit" class="fadeIn fourth" style="background-color: #4c87af; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 8px;">Registrar</button>
+          
+    </form>
+
+    <!-- Remind Password -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">¿Olvidaste tu contraseña?</a>
+    </div>
+  </div>
+</div>
